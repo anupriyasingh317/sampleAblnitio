@@ -5,8 +5,38 @@ This repository contains a complex project with PLSQL scripts, Ab Initio graphs,
 ## Structure
 
 - **PLSQL/**: Directory for PLSQL scripts.
+  - **create_tables.sql**: Script to create necessary tables in the database.
+  - **insert_data.sql**: Script to insert data into the processed_data table.
+  - **generate_report.sql**: Script to generate a report from the processed_data table.
+  - **PackageSpecifications/**: Directory for package specification scripts.
+    - **package_spec_1.sql**: Example package specification script.
+    - **package_spec_example.sql**: Example package specification script with constants and procedures.
+    - **package_spec_loan_proc.sql**: Package specification for loan processing.
+    - **package_spec_loan_handler.sql**: Package specification for loan handling.
+    - **package_spec_customer_service.sql**: Package specification for customer service.
+    - **package_spec_account_service.sql**: Package specification for account service.
+    - **package_spec_transaction_service.sql**: Package specification for transaction service.
+    - **... (5 more scripts)**
+  - **PackageBodies/**: Directory for package body scripts.
+    - **package_body_1.sql**: Example package body script.
+    - **package_body_example.sql**: Example package body script implementing the procedures.
+    - **package_body_loan_proc.sql**: Package body for loan processing procedures.
+    - **package_body_loan_handler.sql**: Package body for loan handling procedures.
+    - **package_body_customer_service.sql**: Package body for customer service procedures.
+    - **package_body_account_service.sql**: Package body for account service procedures.
+    - **package_body_transaction_service.sql**: Package body for transaction service procedures.
+    - **... (5 more scripts)**
+  - **GlobalTemporaryTables/**: Directory for global temporary table scripts.
+    - **global_temp_table_1.sql**: Example global temporary table script.
 - **AbInitio/**: Directory for Ab Initio graphs.
+  - **extract_data.mp**: Ab Initio graph for extracting data from a source file.
+  - **process_data.mp**: Ab Initio graph for processing data from the raw_data table.
 - **ShellScripts/**: Directory for shell scripts.
+  - **run_extraction.sh**: Script to run the data extraction Ab Initio graph.
+  - **run_processing.sh**: Script to run the data processing Ab Initio graph.
+  - **run_insertion.sh**: Script to run the PLSQL script for data insertion.
+  - **generate_report.sh**: Script to run the PLSQL script for report generation.
+  - **run_workflow.sh**: Script to manage the entire workflow.
 
 ## Project Overview
 
